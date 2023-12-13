@@ -1,5 +1,4 @@
 # Hangman-Game
-# Hangman Game
 
 This is a simple Hangman game built using HTML, CSS, and JavaScript. The game allows players to guess a word by selecting letters. The player has six attempts to guess the correct word, and a hangman figure is drawn for each incorrect guess.
 
