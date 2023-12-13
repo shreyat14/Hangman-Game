@@ -1,0 +1,179 @@
+body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: linear-gradient(to bottom, #ffffff, #f8f8f8); /* Light white gradient for body */
+  }
+  
+  h2 {
+    font-family: 'Comic Sans MS', cursive; /* A playful font for a game feel */
+    color: #3498db; /* A shade of blue for the text color */
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 2em; /* Larger font size for emphasis */
+    margin-bottom: 5px;
+    letter-spacing: 2px; /* Add some letter spacing for a playful look */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2); /* Add a subtle text shadow for depth */
+  }
+  
+  #game-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: linear-gradient(to bottom, #ffffcc, #ffeb99); /* Subtle gradient using different shades of yellow for game-container */
+    padding: 20px;
+    border-radius: 10px;
+    width: 40em;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* Adding a subtle box shadow for depth */
+  }
+  .hidden{
+    display: none;
+  }
+  
+  /*For the options selected*/
+  #select-category {
+    font-size: 1.5em;
+    font-weight: bold;
+    color: #333; /* Adjust the color as needed */
+    margin-bottom: 5px;
+  }
+  
+  #options-container {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  #options-container div {
+    display: flex;
+    justify-content: center;
+  }
+  
+  #options-container button {
+    background: linear-gradient(#2ecc71, #27ae60); /* Gradient from light to slightly darker green */
+    color: #ffffff;
+    font-weight: bold; /* Increased font weight */
+    padding: 14px 20px; /* Increase padding for more spacing */
+    margin: 10px; /* Increase margin for more spacing */
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  #options-container button:hover {
+    background: linear-gradient(#27ae60, #229954); /* Slightly darker green on hover */
+  }
+  
+  #options-container button.active {
+    background: linear-gradient(#2ecc71, #27ae60); /* Original color for the active button */
+  }
+  
+  #options-container button:disabled {
+    background: #d5d5d5; /* Muted color for disabled buttons */
+    color: #666; /* Muted text color for disabled buttons */
+  }
+
+  .letter_chosen_word {
+    font-weight: 6;
+    text-transform: uppercase;
+    font-size: 2rem; /* Size equivalent to h3 text */
+    color: #333; /* Specify your desired text color */
+    margin-right: 4px; /* Add spacing between each letter */
+    letter-spacing: 8px;
+  }
+
+  #word-container{
+    padding-top: 10px;
+    margin: 0 auto; /* This will center the element horizontally */
+    display: table;
+  }
+  
+  #alphabets-container {
+    display: grid;
+    grid-template-columns: repeat(13, 1fr); /* Adjust the number of columns as needed */
+    gap: 10px; /* Adjust the gap between buttons */
+    margin-top: 10px; /* Add some top margin for spacing */
+  }
+  
+  .alphabet-buttons {
+    background-color: #3498db; /* A shade of blue for the buttons */
+    color: #fff; /* White text color */
+    font-size: 1.2em; /* Adjust the font size as needed */
+    padding: 10px; /* Adjust padding for button size */
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .alphabet-buttons:hover {
+    background-color: #2980b9; /* Darker blue on hover */
+  }
+  
+  .alphabet-buttons:disabled {
+    background-color: #bdc3c7; /* Muted color for disabled buttons */
+    color: #666; /* Muted text color for disabled buttons */
+    cursor: not-allowed; /* Cursor indicates the button is disabled */
+  }
+ 
+#hangman-container {
+    margin-left: 110px;
+    padding-top: 25px; /* Increased padding for better spacing */
+    position: relative; /* Ensure the canvas is positioned relative to this container */
+}
+
+#hangman-canvas {
+    border: 3px solid rgb(194, 192, 192); /* Light shade of pink for the border color */
+    border-radius: 10px; /* Optional: Add border radius for a softer look */
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.7); /* Increased shadow for more depth */
+}
+
+#results-container {
+    text-align: center;
+    margin-top: 20px; /* Adjust the margin as needed */
+  }
+  
+  .result {
+    font-size: 2em; /* Adjust the font size as needed */
+    font-weight: bold;
+    margin-bottom: 10px; /* Adjust the margin as needed */
+  }
+  
+  .result.win {
+    color: green;
+  }
+  
+  .result.lose {
+    color: red;
+  }
+  
+  .word {
+    font-size: 1.5em; /* Adjust the font size as needed */
+    margin-top: 10px; /* Adjust the margin as needed */
+  }
+
+  #new-game {
+    background-color: #3498db; /* A shade of blue for the background */
+    color: #fff; /* White text color */
+    font-size: 1.2em; /* Adjust the font size as needed */
+    padding: 10px 20px; /* Adjust padding for button size */
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s; /* Add a smooth transition for hover effect */
+  }
+  
+  #new-game:hover {
+    background-color: #2980b9; /* Darker blue on hover */
+  }
+  
+  
+
+  
+  
+
+  
